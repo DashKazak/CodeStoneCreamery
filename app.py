@@ -15,7 +15,7 @@ def get_balance():
 
     if username == 'cust1':
         customerID = 6748972358
-    else:
+    elif username == 'cust2':
         customerID = 6779654690
 
     balance = get_user_balance(customerID)
