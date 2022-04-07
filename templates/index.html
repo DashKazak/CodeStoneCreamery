@@ -11,13 +11,13 @@
 <body>
     
     {% block content %}
-    <label>Username</label>
-    <br><input id="credentials"></br>
+    <form method="GET" action="get_balance">
+        <label>Username</label>
+        <br><input name="username" id="credentials"></br>
 
-    <label>Password</label>
-    <br><input id="credentials"></br>
+        <label>Password</label>
+        <br><input name="password" id="credentials"></br>
 
-    <form method="GET">
         <button type="submit">Login</button>
     </form>
     {% endblock %}
